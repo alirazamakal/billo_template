@@ -14,9 +14,18 @@ a {
     transition: all 0.4s ease;
     font-weight: 800;
 }
+img {
+    width: 100%;
+}
 
 .navbar {
     box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link.active {
+    background: -webkit-linear-gradient(#00e0fe, #1107fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 section {
@@ -25,7 +34,7 @@ section {
     position: relative;
 }
 
-.overlay {
+.overlay { 
     position: absolute;
     top: 0;
     left: 0;
@@ -56,6 +65,22 @@ section {
     transition: all 0.3s ease;
 }
 
+.video-btn {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(to right, #00e0fe, #1107fe);
+    border-radius: 100px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.video-btn i {
+    font-size: 40px;
+    color: #fff;
+}
+
 .btn:hover {
     color: #fff;
     transform: translateY(-5px);
@@ -66,4 +91,65 @@ section {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.section-intro {
+    margin-bottom: 40px;
+}
+
+.section-intro .divider {
+    height: 4px;
+    width: 70px;
+    background: linear-gradient(to right, #00e0fe, #1107fe);
+    margin: 16px auto;
+}
+
+.service .service-img {
+    position: relative;
+}
+
+.service .service-img .icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(to right, #00e0fe, #1107fe);
+    color: #fff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.service .service-img .icon i {
+    font-size: 34px;
+}
+
+.feature i {
+    background: -webkit-linear-gradient(#00e0fe, #1107fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 54px;
+}
+
+.review {
+    box-shadow: 0 12px 12px rgba(0,0,0,0.1);
+}
+
+.review .person {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+}
+
+.review .person img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+}
+
+.review .stars {
+    color: orange;
 }
