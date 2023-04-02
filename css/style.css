@@ -1,4 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap');
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
 
 body {
     font-family: "Roboto", sans-serif;
@@ -13,6 +18,7 @@ a {
     text-decoration: none;
     transition: all 0.4s ease;
     font-weight: 800;
+    color: #20212c;
 }
 img {
     width: 100%;
@@ -22,14 +28,18 @@ img {
     box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link.active {
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link.active :focus {
     background: -webkit-linear-gradient(#00e0fe, #1107fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-section {
+.section-padding {
     padding-block: 80px;
+
+}
+
+section {
     z-index: 2;
     position: relative;
 }
@@ -152,4 +162,42 @@ section {
 
 .review .stars {
     color: orange;
+}
+
+form .form-control {
+    border-radius: 0;
+    background: transparent;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+form .form-control:focus {
+    color: #fff;
+    background: transparent;
+    border-color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+form input.form-control {
+    height: 54px;
+} 
+
+form .form-control::placeholder {
+    color: #fff;
+}
+
+footer {
+    background: linear-gradient(to right, #00e0fe, #1107fe);
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+.social-icons i {
+    font-size: 32px;
+    padding-inline: 6px;
 }
